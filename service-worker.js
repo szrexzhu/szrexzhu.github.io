@@ -12,6 +12,7 @@ var urlsToCache = [
 
 self.addEventListener('install', function(event) {
     // Perform install steps
+    debugger;
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(function(cache) {
@@ -24,7 +25,7 @@ self.addEventListener('install', function(event) {
 
 
 self.addEventListener('activate', function(event) {
-
+    debugger;
     var cacheWhitelist = ['my-site-cache-v1'];
 
     event.waitUntil(
@@ -90,7 +91,6 @@ self.addEventListener('fetch', function(event) {
     event.respondWith(
         caches.match(event.request)
             .then(function(response) {
-                debugger;
                 // Cache hit - return response
                 if (response) {
                     return response;
