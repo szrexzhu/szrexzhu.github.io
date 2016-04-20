@@ -73,7 +73,7 @@
     }
 
     .container {
-        margin-top: 2.0625rem
+        margin-top: 5.0625rem
     }
 
     .icon {
@@ -258,7 +258,7 @@
 
         <div class="footer-contain">
             <div class="downlink"><a id="mttQBLink" href=""  onclick="downlinkClicked();return false;"></a></div>
-            <div class="more"><a onclick="showdetail()" ontouchstart="showdetail()">了解更多信息</a></div>
+            <div class="more"><a onclick="showdetail()">了解更多信息</a></div>
         </div>
     </div>
 </div>
@@ -294,7 +294,7 @@
         </p></div>
 
     <div class="footer-contain">
-        <div class="more"><a onclick="hidedetail()" ontouchstart="hidedetail()">返回</a></div>
+        <div class="more"><a onclick="hidedetail()">返回</a></div>
     </div>
 </div>
 
@@ -374,13 +374,13 @@ function hidedetail() {
 })();
 
 window.onload = window.onresize = function () {
-    // var e = viewSize();
-    // e.height > 500 ? ($("footer").style.position = "fixed", $("footer").style.bottom = "30px", $("container").style.marginTop = "5.0625rem", $("footer").style.marginTop = "0") : ($("container").style.marginTop = "2rem", $("footer").style.position = "relative", $("footer").style.bottom = "0px", $("footer").style.marginTop = "3.25rem")
+//    var e = viewSize();
+//    e.height > 500 ? ($("footer").style.position = "fixed", $("footer").style.bottom = "30px", $("container").style.marginTop = "5.0625rem", $("footer").style.marginTop = "0") : ($("container").style.marginTop = "2rem", $("footer").style.position = "relative", $("footer").style.bottom = "0px", $("footer").style.marginTop = "3.25rem")
 
     var footer = document.querySelector('#footer');
     var container = document.querySelector('#container');
 
-  if (container.offsetTop + container.offsetHeight > footer.offsetTop)//重叠了
+    if (container.offsetTop + container.offsetHeight > footer.offsetTop)//重叠了
     {
         //alert(container.offsetTop + container.offsetHeight + '|' + footer.offsetTop);
         $("container").style.marginTop = "2rem";
