@@ -380,10 +380,13 @@ window.onload = window.onresize = function () {
     var footer = document.querySelector('#footer');
     var container = document.querySelector('#container');
 
-    if (container.offsetTop + container.offsetHeight > footer.offsetTop)//重叠了
+   if (container.offsetTop + container.offsetHeight > footer.offsetTop)//重叠了
     {
         //alert(container.offsetTop + container.offsetHeight + '|' + footer.offsetTop);
-        ($("container").style.marginTop = "2rem", $("footer").style.position = "relative", $("footer").style.bottom = "0px", $("footer").style.marginTop = "3.25rem")
+        $("container").style.marginTop = "2rem";
+        $("footer").style.position = "relative";
+        $("footer").style.bottom = "0px";
+        $("footer").style.marginTop = "3.25rem";
     }
 }
 </script>
