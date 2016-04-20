@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,max-age=0,s-maxage=0,must-revalidate">
+    <title>QQ电脑管家检测</title>
+    <style>.icon, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block
+    }
+
+    .downlink, .footer-title, .more, .p, .title {
+        text-align: center
+    }
+
+    abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+        font-size: 100%;
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline;
+        border: 0;
+        outline: 0;
+        background: 0 0
+    }
+
+    body, html {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+
+    body {
+        font-family: 'Helvetica Neue', Helvetica, STHeiTi, sans-serif;
+        line-height: 1
+    }
+
+    ol, ul {
+        list-style: none
+    }
+
+    blockquote, q {
+        quotes: none
+    }
+
+    blockquote:after, blockquote:before, q:after, q:before {
+        content: '';
+        content: none
+    }
+
+    table {
+        border-spacing: 0;
+        border-collapse: collapse
+    }
+
+    a, button, input {
+        -webkit-tap-highlight-color: transparent
+    }
+
+    a, img {
+        -webkit-touch-callout: none
+    }
+
+    html {
+        font-size: 16px
+    }
+
+    .container {
+        margin-top: 5.0625rem
+    }
+
+    .icon {
+        width: 11.34375rem;
+        height: 8.25rem;
+        margin: 0 auto
+    }
+
+    .title {
+        font-size: 1.25rem;
+        margin-top: 1.59rem
+    }
+
+    .more a, .p {
+        font-size: .875rem
+    }
+
+    .p {
+        line-height: 1.5;
+        margin-top: 1.25rem;
+        color: #777
+    }
+
+    .footer {
+        position: fixed;
+        right: 0;
+        bottom: 40px;
+        left: 0
+    }
+
+    .footer-title {
+        color: #000
+    }
+
+    .downlink a, .more a {
+        text-decoration: none;
+        color: #2771bd
+    }
+
+    .footer-contain {
+        margin-top: 2rem
+    }
+
+    .downlink a {
+        display: inline-block;
+        padding: .5rem .75rem;
+        border: 1px solid #2771bd;
+        border-radius: 3px
+    }
+
+    .more {
+        margin-top: 1rem
+    }</style>
+
+
+    <!-- 原来QB的CSS begin-->
+    <style>
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            vertical-align: baseline
+        }
+        body{
+            background: #e2e2e2;
+        }
+        a{
+            /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
+        }
+        .banner{
+            height: 123px;
+            background-color: #248bf2;
+            overflow: hidden;
+        }
+        .banner img{
+            display: block;
+            width: 205px;
+            height: 75px;
+            margin: 24px auto 0;
+        }
+        .content-wrap{
+            margin: 48px 0 42px;
+        }
+        .content-wrap p{
+            text-align: center;
+            line-height: 1
+        }
+        .content-wrap .usr{
+            font-size: 21px;
+            color: #565656;
+            margin-bottom: 20px;
+        }
+        .content-wrap .address{
+            font-size: 14px;
+            color: #959595;
+            margin-bottom: 10px;
+        }
+        .content-wrap .manager{
+            font-size: 14px;
+            color: #565656;
+            margin-bottom: 10px;
+        }
+        .content-wrap .warn{
+            font-size: 14px;
+            color: #ef2929;
+        }
+        .btn-dl a{
+            display: block;
+            margin: 0 10px 45px;
+            -webkit-appearance: none;
+            border: none;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            background: #248bf2;
+            text-align: center;
+            height: 46px;
+            line-height: 46px;
+            color: #fefefe;
+            font-size: 16px;
+            text-decoration: none;
+        }
+    </style>
+    <!-- 原来QB的CSS end-->
+
+
+    <script src="http://res.imtt.qq.com/component/share/mtt_openqb_new.js"></script>
+</head>
+<body>
+<div style="display:none"><script src="http://s11.cnzz.com/z_stat.php?id=1258693884&web_id=1258693884" language="JavaScript"></script></div>
+<script>
+    function mttSetToDownloadTips()
+    {
+        var downlinkEle =document.querySelector("#mttQBLink");
+        if (downlinkEle)
+        {
+            downlinkEle.innerText = "立即下载";
+        }
+    }
+
+    function mttSetToClickOpenTips()
+    {
+        var downlinkEle =document.querySelector("#mttQBLink");
+        if (downlinkEle)
+        {
+            downlinkEle.innerText = "点击访问";
+        }
+    }
+
+    var mttIsIos = false;
+    var mttNoQB = false;//是否装了QQ浏览器
+    var UA = window.navigator.userAgent;
+    if ( /iphone|ipod/ig.test(UA))
+    {
+        mttIsIos = true;
+        _czc.push(["_trackEvent",'sp','anquan','showbefore','1','']);
+        window.openQbNew({
+            url:'<%= redirectUrl%>',
+            ch: 'anquanclickdownload'
+        },function(resultObj){
+            if (resultObj.code === -1)
+            {
+                mttNoQB = true;
+
+                //console.log("callback");
+
+                _czc.push(["_trackEvent",'sp','anquan','showafter','1','']);
+
+                mttSetToDownloadTips();
+            }
+        });
+    }
+
+</script>
+<div class="main" id="main" style="display:none">
+    <div class="container" id="container">
+        <div class="picon"><img src="http://3gimg.qq.com/tele_safe/safeurl/ios_icon.png" class="icon"></div>
+        <h3 class="title">已停止访问该网页</h3>
+
+        <p class="p">据用户投诉及腾讯手机管家云网址检测，<br>该网页可能包含恶意欺诈内容。</p></div>
+    <div class="footer" id="footer"><p id="footer-title" class="footer-title">安全上网，推荐QQ浏览器打开</p>
+
+        <div class="footer-contain">
+            <div class="downlink"><a id="mttQBLink" href=""  onclick="downlinkClicked();return false;">安全上网，推荐QQ浏览器打开</a></div>
+            <div class="more"><a onclick="showdetail()" ontouchstart="showdetail()">了解更多信息</a></div>
+        </div>
+    </div>
+</div>
+<style>.info-title {
+    padding: 29px 0 11px;
+    margin: 0 26px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid #ddd
+}
+
+.info-content {
+    line-height: 23px;
+    font-size: 15px;
+    margin: 0 26px
+}
+
+.info-content p {
+    padding-top: 15px
+}
+
+.inner-link {
+    color: #0057af
+}</style>
+<div id="alarm-info" title="详情" style="display:none">
+    <div class="info-title">关于潜在的恶意欺诈内容</div>
+    <div class="info-content"><p>你好，你将要访问的网站，经过腾讯手机管家检测，可能包含恶意欺诈内容，建议停止访问。</p>
+
+        <p>欺诈内容通常是模仿某个网站的界面，要求你在该网站提供个人数据如QQ帐号和密码、信用卡号或其它信息，从而盗取你的个人信息和财产。</p>
+
+        <p>如果你确认该网页不是欺诈钓鱼网址，可以进入<a class="inner-link" href="http://guanjia.qq.com/online_server/lan/m_complain_cn.html">腾讯手机管家</a>进行申诉。
+        </p></div>
+
+    <div class="footer-contain">
+        <div class="more"><a onclick="hidedetail()" ontouchstart="hidedetail()">返回</a></div>
+    </div>
+</div>
+
+
+<div id="QBAnQuan" style="display:none">
+    <div class="banner">
+        <img src="http://res.imtt.qq.com/sc/res/images/banner.png" title="QQ浏览器，一触即达"/>
+    </div>
+    <div class="content-wrap">
+        <p class="usr">您正在访问</p>
+        <p class="address"><%= redirectUrl%></p>
+        <p class="manager">此链接经过电脑管家检测，安全性未知</p>
+        <p class
+                   ="warn">请不要在页面上填写QQ账号及密码</p>
+    </div>
+    <div class="btn-dl"><a href="<%= redirectUrl%>">继续访问</a></div>
+</div>
+
+
+</body>
+<script>function $(e) {
+    return document.getElementById(e)
+}
+function viewSize() {
+    return{width: document.documentElement.clientWidth, height: document.documentElement.clientHeight}
+}
+
+function downlinkClicked()
+{
+    if (mttNoQB)
+    {
+        _czc.push(["_trackEvent",'sp','anquan','clickdownload','1','']);
+        window.location.href = "https://itunes.apple.com/us/app/apple-store/id370139302?pt=69276&ct=ShareAnQuan&mt=8";
+    }
+    else
+    {
+        window.openQbNew({
+            url:'<%= redirectUrl%>',
+            ch: 'anquanclickdownload'
+        },function(resultObj){
+            if (resultObj.code === -1)
+            {
+                mttNoQB = true;
+                mttSetToDownloadTips();
+            }
+        });
+    }
+}
+
+function showdetail() {
+    $("main").style.display = "none", $("alarm-info").style.display = "block"
+}
+function hidedetail() {
+    $("main").style.display = "block", $("alarm-info").style.display = "none"
+}
+
+//如果是ios平台显示ios平台要求的内容，否则显示原来的安全提示内容
+(function ()
+{
+    if (mttIsIos)
+    {
+        $("main").style.display = "block";
+    }
+    else
+    {
+        $("QBAnQuan").style.display = "block";
+    }
+
+    if (mttNoQB)
+    {
+        mttSetToDownloadTips();
+    }
+    else
+    {
+        mttSetToClickOpenTips();
+    }
+})();
+
+window.onload = window.onresize = function () {
+    var e = viewSize();
+    e.height > 500 ? ($("footer").style.position = "fixed", $("footer").style.bottom = "30px", $("container").style.marginTop = "5.0625rem", $("footer").style.marginTop = "0") : ($("container").style.marginTop = "2rem", $("footer").style.position = "relative", $("footer").style.bottom = "0px", $("footer").style.marginTop = "3.25rem")
+}</script>
+
+</html>
